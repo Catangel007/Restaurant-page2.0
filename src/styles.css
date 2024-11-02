@@ -1,0 +1,66 @@
+/* styles.css */
+
+  
+  *{
+    margin:0;
+
+  } 
+   body{
+   
+    flex-direction: column;
+    justify-content: space-between;
+    
+   }
+   button{
+     background-color: rgb(140, 88, 40);
+     height: 50px;
+     width: 80px;
+     border:0;
+     font-size: larger;
+     color: rgb(186, 130, 85);
+   }
+
+   button::after{
+   text-decoration: underline;
+    
+   }
+   button:hover{
+    color: rgb(222, 171, 129);
+   }
+  header>h1{
+    color: rgb(186, 130, 85);
+    font-family: Georgia, Times, 'Times New Roman', serif;
+  }
+  footer{
+    background-color: rgb(140, 88, 40);
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(186, 130, 85);
+  
+  }
+  
+   div#content{
+    background: url(./images/pikaso_edit.jpeg)rgb(186, 130, 85) fixed ;
+    height: 100vh;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     
+   }
+  
+  header{
+    background-color: rgb(140, 88, 40);
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-around;
+  
+  }
+  
+ 
+  
+  #home-page{
+    height: 50vh;
+  }
