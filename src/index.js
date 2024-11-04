@@ -27,15 +27,15 @@ const contentPage = document.querySelector("#content");
 //  });
 
 homeBtn.addEventListener("click", ()=>{
-   contentPage.textContent(homePage()) ;
+  document.contentPage.textContent=homePage() ;
  });
  
  menuBtn.addEventListener("click", ()=>{
-   contentPage.textContent(menuPage()) ; 
+   document.contentPage.textContent=menuPage() ; 
  });
  
  aboutBtn.addEventListener("click", ()=>{
-   contentPage.textContent(aboutPage()) ; 
+   document.contentPage.textContent=aboutPage() ; 
  });
 
 //  function currentPage(){
