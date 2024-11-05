@@ -102,6 +102,6 @@ function updateDisplay() {
 
   // Add to page
   content.innerHTML = '';
-  content.appendChild(menuContainer);
+  content.innerHTML= menuContainer;
 }
  }
