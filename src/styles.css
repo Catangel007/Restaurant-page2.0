@@ -4,13 +4,13 @@
   *{
     margin:0;
 
-  } 
-   body{
+  }
+    body{
    
-    flex-direction: column;
-    justify-content: space-between;
-    
-   }
+      background: url(./images/pikaso_edit.jpeg)rgb(186, 130, 85) fixed ;
+      height: 100vh;
+    }
+   
    button{
      background-color: rgb(140, 88, 40);
      height: 50px;
@@ -24,14 +24,17 @@
    button:hover{
     color: rgb(222, 171, 129);
    }
+
    button::after{
     text-decoration: underline;
     color:rgb(186, 130, 85); ;
     }
+
   header>h1{
     color: rgb(186, 130, 85);
     font-family: Georgia, Times, 'Times New Roman', serif;
   }
+
   footer{
     background-color: rgb(140, 88, 40);
     display: flex;
@@ -44,8 +47,9 @@
   
    div#content{
     background: url(./images/pikaso_edit.jpeg)rgb(186, 130, 85) fixed ;
-    height: 100vh;
-     flex-direction: row;
+    height: 100%;
+    display: flex;
+     flex-direction: column;
      align-items: center;
      justify-content: center;
      
@@ -60,13 +64,6 @@
   
   }
   
- #content{
-  
-  
-    align-items: center;
-    justify-content: center;
-   
- }
   
   #home-page{
     height: 50vh;
@@ -86,7 +83,6 @@
     color: rgb(113, 61, 24);
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
-    
     padding: 5px;
   }
 
@@ -97,26 +93,38 @@
   #home-header{
     text-align: center;
     color: rgb(113, 61, 24);
-    font-size: 40px;
+    font-size: 70px;
+    font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
     height:20vh;
-    width: 50vw;
-    background-color: rgb(242, 216, 167);
+    width: 40vw;
+   margin: 2em;
     border-radius: 50px;
     padding: 20px;
   }
 
-  #home-Message{
-    height:30vh;
-    width: 50vw;
+  #home-Message,#schedule{
+    height:50vh;
+    width: 80vw;
     background-color: rgb(242, 216, 167);
-    border-radius: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    color:rgb(113, 61, 24) ;
+    font-family: 'Times New Roman','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
+    margin: 4em;
+    margin-bottom: 0;
   }
-  #schedule{
-    height:40vh;
-    width: 50vw;
-    background-color: rgb(242, 216, 167);
-    border-radius: 50px;
-    padding: 20px;
+
+
+  #title{
+    color: rgb(113, 61, 24) ;
+    height:200px;
+    width: 100vw;
+    text-align: center;
+    background-color: rgb(235, 158, 107);
+    /* border-top-left-radius:20px ;
+    border-top-right-radius:20px ; */
+    
+   
   }

@@ -7,10 +7,15 @@
     homeHeader.textContent=" Made with lots of love and tenderness.";
     homeHeader.setAttribute("id","home-header")
 
-
+     const homeMessageH1= document.createElement("h1");
+     homeMessageH1.textContent= "Small Chops";
+     homeMessageH1.setAttribute("id","title");
     const homeMessage = document.createElement("p");
-    homeMessage.textContent="Over the years , Small chops has been a house old tradition. when the main course be sure to other small chops. We have been enriching our homes or centuries with our extensive selection of many varieties of small snacks to serve as a dessert or an appetize for your meals.place your order and let's keep making you happy with Small chops!!";
-    homeMessage.setAttribute("id","home-Message");
+    homeMessage.textContent=" A Cherished Nigerian Tradition" +
+         "Delight in the timeless pleasure of Small Chops, a beloved tradition that has graced Nigerian homes and celebrations for generations. Our meticulously crafted selection of bite-sized delicacies serves as the perfect prelude to your main course or a delightful accompaniment to any gathering. From crispy puff-puff and savory samosas to perfectly seasoned spring rolls and chin-chin, our extensive menu features both classic favorites and contemporary interpretations. Whether you're hosting an elegant soirée, a family celebration, or simply craving a premium snacking experience, our Small Chops add that special touch of joy to every occasion.Experience the magic of these miniature culinary treasures. Place your order today and let us bring the beloved Small Chops tradition to your table!";
+            
+         
+         homeMessage.setAttribute("id","home-Message");
 
     const timeIn = document.createElement("div");
     timeIn.setAttribute("id","time-container")
@@ -28,6 +33,7 @@
 
      content.innerHTML=``;
      content.appendChild(homeHeader);
+     content.appendChild(homeMessageH1);
      content.appendChild(homeMessage);
     content.appendChild(schedule);
 
