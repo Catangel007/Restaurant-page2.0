@@ -128,3 +128,15 @@
     
    
   }
+
+  #menu-header{
+    text-align: center;
+    color: rgb(113, 61, 24);
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    height:20vh;
+    width: 40vw;
+   margin: 2em;
+    
+  }

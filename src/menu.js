@@ -2,6 +2,10 @@
 
  export function menuPage(){
 
+    const menuHeader = document.createElement("h1");
+    menuHeader.textContent= "MENU";
+    menuHeader.setAttribute("id","menu-header");
+
   const menuItems = [
     {
         name: "Samosa",
@@ -34,28 +38,27 @@ function createMenuItem({name, price, image, alt }){
 
   return menuItem;
 }
-function createScrollButton(direction) {
-  const button = document.createElement("img");
-  button.className = `scroll-${direction}`;
-  button.src = `src/images/${direction}-arrow.png`;
-  button.alt = `Scroll ${direction}`;
-  return button;
-}
 
-function rotateItems(array, direction) {
-  if (direction === 'left') {
-      const first = array.shift();
-      array.push(first);
-  } else {
-      const last = array.pop();
-      array.unshift(last);
-  }
-  updateDisplay();
-}
 
 function updateDisplay() {
+    // Create main container
+  const content = document.querySelector("#content");
+  const menuContainer = document.createElement("div");
+  menuContainer.className = "menu-container";
+
+// Create scroll buttons
+const scrollLeft = createScrollButton('left');
+const scrollRight = createScrollButton('right');
+
+// Add event listeners
+scrollLeft.addEventListener('click', () => rotateItems(menuItems, 'left'));
+scrollRight.addEventListener('click', () => rotateItems(menuItems, 'right'));
+
+
   menuContainer.innerHTML = '';
   menuContainer.appendChild(scrollLeft);
+
+
   function createScrollButton(direction) {
         const button = document.createElement("img");
         button.className = `scroll-${direction}`;
@@ -84,24 +87,15 @@ function updateDisplay() {
       menuContainer.appendChild(scrollRight);
   }
 
-  // Create main container
-  const content = document.querySelector("#content");
-  const menuContainer = document.createElement("div");
-  menuContainer.className = "menu-container";
-
-  // Create scroll buttons
-  const scrollLeft = createScrollButton('left');
-  const scrollRight = createScrollButton('right');
-
-  // Add event listeners
-  scrollLeft.addEventListener('click', () => rotateItems(menuItems, 'left'));
-  scrollRight.addEventListener('click', () => rotateItems(menuItems, 'right'));
-
-  // Initial display
-  updateDisplay();
-
-  // Add to page
-  content.innerHTML = '';
-  content.innerHTML= menuContainer;
+  
+  
 }
+
+// Initial display
+updateDisplay();
+
+// Add to page
+content.innerHTML = '';
+content.appendChild(menuHeader);
+content.appendChild(menuContainer);
  }

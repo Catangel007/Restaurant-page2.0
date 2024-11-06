@@ -20,24 +20,14 @@ const contentPage = document.querySelector("#content");
  
 
 
-
-//add functionality to buttons
-//  allBtn.addEventListener("click",()=>{
-   
-//  });
-
 homeBtn.addEventListener("click", ()=>{
   document.contentPage.textContent=homePage() ;
  });
  
  menuBtn.addEventListener("click", ()=>{
-   document.contentPage.textContent=menuPage() ; 
+   document.contentPage.innerHTML = menuPage() ; 
  });
  
  aboutBtn.addEventListener("click", ()=>{
    document.contentPage.textContent=aboutPage() ; 
  });
-
-//  function currentPage(){
-//   if ( )
-//  }
