@@ -31,8 +31,8 @@ export function menuPage() {
         menuItem.setAttribute("id","menu-item");
 
         menuItem.innerHTML = `
+         <h2 id="menu-name">${name}</h2>
             <img src="${image}" alt="${alt}" id="menu-image">
-            <h2 id="menu-name">${name}</h2>
             <p id="menu-price">${price}</p>
         `;
         return menuItem;
@@ -43,8 +43,6 @@ export function menuPage() {
         button.setAttribute ("id",`scroll-right`) ;
         button.src ="/Users/news/repos/Restaurant-page2.0/src/images/angle-square-right.svg"; 
         button.alt = `Scroll right`;
-        button.height = "50px";
-        button.width = "30px";
         return button;
     }
 
@@ -53,8 +51,6 @@ export function menuPage() {
         button.setAttribute ("id",`scroll-left`) ;
         button.src = "/Users/news/repos/Restaurant-page2.0/src/images/angle-square-left.svg";
         button.alt = `Scroll left`;
-        button.height = "50px";
-        button.width = "30px";
         return button;
     }
 
@@ -82,20 +78,19 @@ export function menuPage() {
         menuContainer.innerHTML = '';
         menuContainer.appendChild(scrollLeft);
         menuItems.forEach(item => {
-            menuContainer.appendChild(menuHeader);
             menuContainer.appendChild(createMenuItem(item));
         });
         menuContainer.appendChild(scrollRight);
     }
-    updateDisplay();
+   
     // Add event listeners
     scrollLeft.addEventListener('click', () => rotateItems(menuItems, 'left'));
     scrollRight.addEventListener('click', () => rotateItems(menuItems, 'right'));
 
     // Initial display setup
-    content.innerHTML = "";
-    
-    content.appendChild(menuContainer);
+     content.innerHTML = "";
+     content.appendChild(menuHeader);
+     content.appendChild(menuContainer);
     
     
 }

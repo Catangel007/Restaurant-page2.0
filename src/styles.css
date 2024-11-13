@@ -26,7 +26,7 @@
     color: rgb(222, 171, 129);
    }
 
-   button::after{
+   button:active{
     text-decoration: underline;
     color:rgb(186, 130, 85); ;
     }

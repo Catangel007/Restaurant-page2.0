@@ -22,10 +22,10 @@ homeBtn.addEventListener("click", () => {
   homePage(contentPage);
 });
 
-// menuBtn.addEventListener("click", () => {
+ menuBtn.addEventListener("click", () => {
   
-//   menuPage(contentPage);
-// });
+   menuPage(contentPage);
+ });
 
 aboutBtn.addEventListener("click", () => {
   

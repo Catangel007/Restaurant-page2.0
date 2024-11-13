@@ -13,8 +13,6 @@
     const homeMessage = document.createElement("p");
     homeMessage.textContent=" A Cherished Nigerian Tradition" +
          "Delight in the timeless pleasure of Small Chops, a beloved tradition that has graced Nigerian homes and celebrations for generations. Our meticulously crafted selection of bite-sized delicacies serves as the perfect prelude to your main course or a delightful accompaniment to any gathering. From crispy puff-puff and savory samosas to perfectly seasoned spring rolls and chin-chin, our extensive menu features both classic favorites and contemporary interpretations. Whether you're hosting an elegant soirée, a family celebration, or simply craving a premium snacking experience, our Small Chops add that special touch of joy to every occasion.Experience the magic of these miniature culinary treasures. Place your order today and let us bring the beloved Small Chops tradition to your table!";
-            
-         
          homeMessage.setAttribute("id","home-Message");
 
     const timeIn = document.createElement("div");
