@@ -18,7 +18,7 @@
          homeMessage.setAttribute("id","home-Message");
 
     const timeIn = document.createElement("div");
-    timeIn.setAttribute("id","time-container")
+    timeIn.setAttribute("id","time-container");
 
     let days = ["Sunday:8am - 10pm","Monday:8am - 6pm","Tuesday:8am - 6pm","Wednesday:8am - 6pm","Thursday:8am - 6pm","Friday:8am - 6pm","Saturday:8am - 10pm"];
     
@@ -27,18 +27,15 @@
      schedule.appendChild(scheduleList);
      scheduleList.textContent = days;
      timeIn.textContent = schedule ;
-     schedule.setAttribute("id","schedule")
+     schedule.setAttribute("id","schedule");
 
      
 
-     content.innerHTML=``;
+     content.innerHTML = "";
      content.appendChild(homeHeader);
-     content.appendChild(homeMessageH1);
      content.appendChild(homeMessage);
     content.appendChild(schedule);
 
 
-    
-    
 
-                    }
+}

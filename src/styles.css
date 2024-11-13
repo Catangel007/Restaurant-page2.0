@@ -9,6 +9,7 @@
    
       background: url(./images/pikaso_edit.jpeg)rgb(186, 130, 85) fixed ;
       height: 100vh;
+      width:100vw;
     }
    
    button{
@@ -47,7 +48,8 @@
   
    div#content{
     background: url(./images/pikaso_edit.jpeg)rgb(186, 130, 85) fixed ;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     display: flex;
      flex-direction: column;
      align-items: center;
@@ -63,10 +65,16 @@
     justify-content: space-around;
   
   }
-  
+  .company-name{
+    position: relative;
+    right: 300px;
+    top: 5px;
+    font-family:"Papyrus","Brush Script MT","Dancing Script";
+    font-weight: 1.5em;
+  }
   
   #home-page{
-    height: 50vh;
+    height: 100vh;
   }
 
   #about-info{
@@ -88,6 +96,8 @@
 
   #about-info p {
     margin-top: 2em;
+    color:rgb(113, 61, 24) ;
+    font-family:"Papyrus","Brush Script MT","Dancing Script";
   }
 
   #home-header{
@@ -98,24 +108,39 @@
     font-family: 'Times New Roman', Times, serif;
     height:20vh;
     width: 40vw;
-   margin: 2em;
-    border-radius: 50px;
-    padding: 20px;
+   margin-top: 1em;
+    margin-bottom: 1em;
   }
 
-  #home-Message,#schedule{
+  #home-Message{
     height:50vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(242, 216, 167);
+    border-radius: 20px;
+    color:rgb(113, 61, 24) ;
+    font-family:"Papyrus","Brush Script MT","Dancing Script";
+    padding: 20px;
+    margin: 4em;
+    
+    
+  }
+  #schedule{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
     width: 80vw;
     background-color: rgb(242, 216, 167);
     border-radius: 20px;
-    font-size: 20px;
     color:rgb(113, 61, 24) ;
-    font-family: 'Times New Roman','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:"Papyrus","Brush Script MT","Dancing Script";
     padding: 20px;
-    margin: 4em;
-    margin-bottom: 0;
-  }
-
+    margin-bottom: 2em;
+    
+}
 
   #title{
     color: rgb(113, 61, 24) ;
@@ -140,3 +165,32 @@
    margin: 2em;
     
   }
+
+  #menu-item{
+   height: 60vh;
+   width: 70vw;
+   background-color: rgb(242, 216, 167);
+  }
+
+  #menu-image{
+    height: 300px;
+    width: 300px;
+  }
+
+  #menu-price{
+    height: 300px;
+    width: a;
+  }
+
+  #menu-container{
+    display: flex;
+    background-color: beige;
+  }
+
+  #scroll-right,#scroll-left{
+  color: black;
+  height: 2rem;
+  width: 1rem;
+  }
+
+  
