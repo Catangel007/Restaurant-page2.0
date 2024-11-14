@@ -40,6 +40,7 @@ export const menuPage = (function() {
             <p id="menu-price">${price}</p>
             <button id="cart-btn">Add to Cart</button>
         `;
+
         return menuItem;
     }
 
@@ -58,6 +59,8 @@ export const menuPage = (function() {
         button.alt = `Scroll left`;
         return button;
     }
+
+
 
     function rotateItems(array, direction) {
         if (direction === 'left') {
@@ -90,12 +93,13 @@ export const menuPage = (function() {
     // Add event listeners
     scrollLeft.addEventListener('click', () => rotateItems(menuItems, 'left'));
     scrollRight.addEventListener('click', () => rotateItems(menuItems, 'right'));
-
+    
     function init(){
         content.innerHTML = "";
         content.appendChild(menuHeader);
         content.appendChild(menuContainer);
         updateDisplay();
+        
     }
     return { init};
 })();
