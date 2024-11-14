@@ -154,6 +154,14 @@
    
   }
 
+  #menu-name{
+    color: rgb(113, 61, 24);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 20px;
+  }
   #menu-header{
     text-align: center;
     color: rgb(113, 61, 24);
@@ -168,29 +176,43 @@
 
   #menu-item{
    height: 60vh;
-   width: 70vw;
-   background-color: rgb(242, 216, 167);
+   width: 300px;
+   background-color: rgba(231, 172, 121, 0.564);
+   padding: 2em;
+   
   }
 
   #menu-image{
     height: 300px;
     width: 300px;
+    border-radius: 5px;
   }
 
   #menu-price{
+    color: rgb(113, 61, 24) ;
     height: 300px;
-    width: a;
+    width: 300px;
+    text-align: center;
+    font-size: large;
   }
-
+#cart-btn{
+  background-color: rgb(113, 61, 24);
+   color: rgb(186, 130, 85);
+   border-radius: 5px;
+   height: 10px ;
+}
   #menu-container{
-    display: flex;
-    background-color: beige;
+    margin-bottom: 5rem;
+   display: flex;
+   margin-bottom: 10vh;
+   background-color:rgb(255, 255, 255);
   }
 
-  #scroll-right,#scroll-left{
-  color: black;
-  height: 2rem;
-  width: 1rem;
+  #scroll-right, #scroll-left{
+  height: 20vh;
+  width: 8vw;
+  position: relative;
+  top: 150px;
   }
 
   

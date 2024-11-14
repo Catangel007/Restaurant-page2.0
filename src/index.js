@@ -24,13 +24,13 @@ homeBtn.addEventListener("click", () => {
 
  menuBtn.addEventListener("click", () => {
   
-   menuPage(contentPage);
+   menuPage.init();
  });
 
 aboutBtn.addEventListener("click", () => {
-  
+  contentPage.innerHTML ="";
   aboutPage(contentPage);
 });
 
 // Call the initial page to load (e.g., homepage)
-homePage(contentPage);
+//homePage(contentPage);
