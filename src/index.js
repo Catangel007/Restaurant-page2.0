@@ -8,6 +8,10 @@ import { aboutPage } from "./about.js";
 
 import "./styles.css";
 
+if (process.env.NODE_ENV !== 'production') {
+  console.log('Looks like we are in development mode!');
+}
+
 console.log(greeting1);
 console.log(greeting2);
 console.log(greeting3);
